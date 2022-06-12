@@ -1,0 +1,26 @@
+﻿<Window x:Class="OOP_Clovek.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_Clovek"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <TextBox Name="txt1" HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="358" Height="214"/>
+        <TextBox Name="txt2" HorizontalAlignment="Left" Margin="411,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Height="214"/>
+        <Button Content="Jed" HorizontalAlignment="Left" Margin="63,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.275,-0.073" Height="37" Width="119" Click="Button_Click"/>
+        <Button Content="Vyloz" HorizontalAlignment="Left" Margin="189,244,0,0" VerticalAlignment="Top" Height="37" Width="119" Click="Button_Click1"/>
+        <Button Content="Tankuj" HorizontalAlignment="Left" Margin="63,294,0,0" VerticalAlignment="Top" Height="37" Width="119" Click="Button_Click2"/>
+        <Button Content="Naloz" HorizontalAlignment="Left" Height="37" Margin="189,294,0,0" VerticalAlignment="Top" Width="119" Click="Button_Click4" RenderTransformOrigin="1.561,-0.939" />
+        <Button Content="Jed" HorizontalAlignment="Left" Margin="467,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.275,-0.073" Height="37" Width="119" Click="Button_Click6"/>
+        <Button Content="Vyloz" HorizontalAlignment="Left" Margin="593,244,0,0" VerticalAlignment="Top" Height="37" Width="119" Click="Button_Click7"/>
+        <Button Content="Tankuj" HorizontalAlignment="Left" Margin="467,294,0,0" VerticalAlignment="Top" Height="37" Width="119" Click="Button_Click8"/>
+        <Button Content="Naloz" HorizontalAlignment="Left" Height="37" Margin="593,294,0,0" VerticalAlignment="Top" Width="119" Click="Button_Click10" />
+
+
+
+
+    </Grid>
+</Window>
