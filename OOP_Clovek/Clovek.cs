@@ -41,7 +41,7 @@ namespace OOP_Clovek
             }
             else if (naklad > 11000)
             {
-                    Odjezd = "Víc nenaložíš!";
+                    Odjezd = "Jedeš!";
             }
         }
         public void Vylozitnaklad()
@@ -54,21 +54,28 @@ namespace OOP_Clovek
             else if (naklad > 0)
             {
                 naklad -= 1000;
+                Odjezd = "Jedeš!";
             }
         }
 
         public void Natankovat()
         {
-
-            if (palivo <= 150)
-            {
-                palivo += 50;
-            }
-            else if (palivo >= 200)
             {
                 palivo = 200;
+                Odjezd = "Jedeš!";
             }
         }
+
+
+        public void Dojedes()
+        {
+            if (palivo <= 0)
+            {
+                dojezd = 0;
+                Odjezd = "Nejedeš!";
+            }
+        }
+
         public void Jed()
         {  
             if (naklad <= 12000)
