@@ -9,13 +9,13 @@ namespace OOP_Clovek
         // soukromé proměnné - nejsou dostupné mimo třídu Nakladak
         private int palivo;
         private int naklad;
-        private int dojezd;
+       
 
         // vlastnosti - zveřejňují hodnoty ven z třídy
         public string Auto { get; set; }
         public string Znacka { get; set; }
         public int Palivo { get => palivo; }
-        public int Dojezd { get => dojezd; }
+        public int Dojezd { get; set; }
         public int Nosnost { get; set; }
         public int Naklad { get => naklad; }
         public string Odjezd { get; set; }
@@ -27,7 +27,7 @@ namespace OOP_Clovek
             Znacka = "";
             Auto = "";
             palivo = 200;
-            dojezd = 1000;
+            Dojezd = 1000;
             Nosnost = 12000;
             naklad = 0;
             Odjezd = "Jedeš!";
@@ -37,7 +37,7 @@ namespace OOP_Clovek
 
             if (naklad <= 11000)
             {
-                naklad += 1000;
+                naklad += 2000;
             }
             else if (naklad > 11000)
             {
@@ -53,45 +53,36 @@ namespace OOP_Clovek
             }
             else if (naklad > 0)
             {
-                naklad -= 1000;
+                naklad -= 2000;
                 Odjezd = "Jedeš!";
             }
+        }
+
+        public void Jed()
+        {  
+            if (palivo == 0)
+            {
+                palivo = 0;
+                Dojezd = 0;
+                Odjezd = "Nejedeš!";
+            }
+            else if (palivo > 0)
+            {
+                palivo -= 50;
+                Dojezd -= 250;
+                Odjezd = "Jedeš!";
+            }
+            
         }
 
         public void Natankovat()
         {
             {
                 palivo = 200;
+                Dojezd = 1000;
                 Odjezd = "Jedeš!";
             }
         }
 
-
-        public void Dojedes()
-        {
-            if (palivo <= 0)
-            {
-                dojezd = 0;
-                Odjezd = "Nejedeš!";
-            }
-        }
-
-        public void Jed()
-        {  
-            if (naklad <= 12000)
-            {
-                palivo -= 50;
-            }
-            else if (palivo <= 0)
-            {
-                palivo = 0;
-            }
-            if (palivo <= 0)
-            {
-                Odjezd = "Nejedeš!";
-            }
-        }
-
-      
     }
 }
